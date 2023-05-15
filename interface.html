@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: #fafafa;
+            color: #212121;
+            border-radius: 20px;
+        }
+
+        #addWebsiteButton {
+            background-color: #3f51b5;
+            /* Indigo */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        #addWebsiteButton:hover {
+            background-color: #303f9f;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        #toggleButton {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        #toggleButton.enabled {
+            background-color: #3f51b5;
+            /* Indigo */
+        }
+
+        #toggleButton.enabled:hover {
+            background-color: #303f9f;
+            transform: translateY(-2px);
+            box-shadow: 1px -1px #d32f2f inset;
+        }
+
+        #toggleButton.disabled {
+            background-color: #9e9e9e;
+            /* Grey */
+        }
+
+        #toggleButton.disabled:hover {
+            background-color: #616161;
+            transform: translateY(-2px);
+            box-shadow: 1px -1px #d32f2f inset;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        button {
+            font-size: small;
+            padding: 0 5px;
+            border-radius: 50%;
+            color: white;
+            background-color: #f44336;
+            /* Red */
+            box-shadow: 0 -1px #d32f2f inset;
+            transition: all .3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #d32f2f;
+            transform: translateY(-2px);
+            box-shadow: 1px -1px #d32f2f inset;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="addWebsiteButton">Add Current Website</button>
+    <button id="toggleButton" class="enabled">Disable Extension</button>
+    <ul id="websiteList"></ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

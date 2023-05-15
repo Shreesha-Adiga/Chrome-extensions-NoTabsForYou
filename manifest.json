@@ -1,0 +1,18 @@
+{
+    "action": {
+        "default_popup": "interface.html",
+        "default_icon": {
+            "128": "logo_inactive.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "name": "NoNewTabForYou",
+    "version": "0.1",
+    "manifest_version": 3,
+    "permissions": [
+        "tabs",
+        "storage"
+    ]
+}
